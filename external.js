@@ -16,16 +16,16 @@ function playRound(computerSelection, playerSelection, conCombination_array = co
 
     if (computerSelection === playerSelection) {
         winner = "draw";
-    }
+    } else {
 
-    for (let i = 0; i < conCombination_array.length; i++) {
-        if (playerSelection === conCombination_array[i][0] && computerSelection === conCombination_array[i][1]) {
-            winner = "player";
-            break;
+        for (let i = 0; i < conCombination_array.length; i++) {
+            if (playerSelection === conCombination_array[i][0] && computerSelection === conCombination_array[i][1]) {
+                winner = "player";
+                break;
+            }
+
         }
-
     }
-
     return winner;
 }
 
