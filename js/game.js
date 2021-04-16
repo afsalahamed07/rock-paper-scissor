@@ -5,7 +5,6 @@ const conCombination = [
     ["scissor", "paper"]
 ];
 
-game();
 
 function computerPlay(weapons_array = weapons) {
     return weapons_array[Math.floor((Math.random() * (3 - 0)))];

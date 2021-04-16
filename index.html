@@ -7,11 +7,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 
-    <script src="external.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="style/reset.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <div id="box-container" class="box-container">
+            <div class="weapon-box">
+                <h3>Rock</h3>
+                <div class="icons">
+                    <span class="iconify" data-icon="noto:rock" data-inline="false"></span>
+                </div>
+            </div>
+            <div class="weapon-box">
+                <h3>Paper</h3>
+                <div class="icons">
+                    <span class="iconify" data-icon="noto:roll-of-paper" data-inline="false"></span>
+                </div>
+            </div>
+            <div class="weapon-box">
+                <h3>Scissor</h3>
+                <div class="icons">
+                    <span class="iconify" data-icon="bi:scissors" data-inline="false"></span>
+                </div>
+            </div>
+        </div>
 
+        <div class="box-container">
+            <div>
+                <h4>Player</h4>
+                <div id="player-score-box" class="score-box">
+                    <h2 class="score"></h2>
+                </div>
+            </div>
+            <div id="comentry">
+                <p>
+                    You have 5 chance to beat Computer <br> Click start to begin.
+                </p>
+            </div>
+            <div>
+                <h4>Computer</h4>
+                <div id="computer-score-box" class="score-box">
+                    <h2 class="score"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="btn-div">
+            <button id="btn-custom" class="waves-effect waves-light btn-large black-text">Start</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><span>&#169;</span>github.com/afsalahamed07</p>
+        </div>
+    </footer>
+
+    <script src="js/external.js"></script>
+    <script src="js/game.js"></script>
 </body>
 
 </html>
