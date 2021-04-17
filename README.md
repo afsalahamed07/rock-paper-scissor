@@ -41,3 +41,11 @@ this returns winner
 use **conditon combiantion**
 
 ## algorithm
+
+## UI
+
+## Game logic
+
+alllow user to click weapons 5 times
+get clicked values
+run game every 5 times

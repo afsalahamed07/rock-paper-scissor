@@ -44,7 +44,7 @@ body {
     padding: 20px;
     /*  */
     text-align: center;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 
 .icons {
@@ -58,7 +58,7 @@ body {
     border: 2px solid black;
 }
 
-#comentry {
+#commentary {
     width: 400px;
     padding-top: 8%;
 }
@@ -86,11 +86,4 @@ h2 {
     font-size: 70px;
     padding: 20px;
     transition: all 0.5s;
-}
-
-
-/* hover effects */
-
-.weapon-box:hover {
-    cursor: pointer;
 }
