@@ -4,11 +4,6 @@ let btn = document.querySelector("#btn-custom");
 
 let commentary = document.querySelector("#commentary p");
 
-
-
-console.log(commentary);
-
-
 // insialization of values before game
 let playerScoreBox = document.querySelector("#player-score-box");
 let computerScoreBox = document.querySelector("#computer-score-box");
@@ -20,9 +15,6 @@ const audio = new Audio('../sounds/tom.wav')
 
 // btn click
 btn.addEventListener("click", clickBtn);
-
-// global varibales used in funcitons
-// let key;
 
 
 
@@ -43,10 +35,6 @@ function clickBtn() {
     if (btn.textContent == "Start") {
         btn.textContent = "Reset";
 
-        // loop break
-        // key = 0;
-
-
         // restting scores
         playerScore.textContent = 0;
         computerScore.textContent = 0;
@@ -61,8 +49,20 @@ function clickBtn() {
     } else {
         // game reset
         btn.textContent = "Start";
-        playerScore.textContent = "";
-        computerScore.textContent = "";
+        playerScore.textContent = "0";
+        computerScore.textContent = "0";
+
+        console.log("rest");
+
+        weaponBoxes.forEach(weaponBox => {
+            weaponBox.removeEventListener("click", clickWeapon);
+        });
+
+        commentary.innerHTML = "You have 5 chance to beat Computer <br> Click start to begin.";
+
+        key = 0;
+        pScore = 0;
+        cScore = 0;
     }
 }
 
@@ -70,8 +70,6 @@ function clickBtn() {
 
 function clickWeapon() {
     // functino when clicking on weapon box
-
-
 
     // value of cliked weapon
     let weaponChoic = this.querySelector("h3").textContent;
@@ -81,7 +79,6 @@ function clickWeapon() {
     audio.play();
 
     key = game(weaponChoic);
-    console.log(key);
 
     if (key == 5) {
         // removing eventlistner
@@ -92,11 +89,11 @@ function clickWeapon() {
         if (pScore > cScore) {
             commentary.innerHTML = "You win <br> -"
         } else {
-            commentary.innerHTML = "Computer win win <br> -"
+            commentary.innerHTML = "Computer win <br> -"
         }
 
         // restting 
-        btn.textContent = "Start";
+        btn.textContent = "Reset";
         // commentary.innerHTML = "You have 5 chance to beat Computer <br> Click start to begin."
         key = 0;
         pScore = 0;
