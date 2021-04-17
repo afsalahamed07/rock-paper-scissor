@@ -11,7 +11,7 @@ let playerScore = playerScoreBox.querySelector(".score");
 let computerScore = computerScoreBox.querySelector(".score");
 
 // drum audio
-const audio = new Audio('../resources/sounds/tom.wav')
+const audio = document.querySelector("#tom-sound");
 
 // btn click
 btn.addEventListener("click", clickBtn);
