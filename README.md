@@ -51,4 +51,4 @@ get clicked values
 run game every 5 times
 
 
-live link: [Rock Paper Scissor](https://afsalahamed07.github.io/ock-paper-scissor)
+live link: [Rock Paper Scissor](https://afsalahamed07.github.io/rock-paper-scissor)
