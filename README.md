@@ -49,3 +49,6 @@ use **conditon combiantion**
 alllow user to click weapons 5 times
 get clicked values
 run game every 5 times
+
+
+live link: [Rock Paper Scissor](https://afsalahamed07.github.io/ock-paper-scissor)
